@@ -7,7 +7,7 @@
     <select id="findAll" resultType="com.example.performanceasync.dto.Notice">
         SELECT *
         FROM notice
-        limit 1000;
+        limit 5000;
     </select>
 
 </mapper>
