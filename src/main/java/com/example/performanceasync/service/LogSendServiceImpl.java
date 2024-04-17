@@ -32,13 +32,13 @@ public class LogSendServiceImpl implements SendService{
         // common pool의 쓰레드 수 확인
         int commonPoolSize = commonPool.getParallelism();
 
-        System.out.println("Common Pool Size: " + commonPoolSize + "/"+ processors);
+        System.out.println("Common Pool Size: " + commonPoolSize + "/" + processors);
 
         List<Notice> notices = noticeService.getAllNotices();
         long beforeTime = System.currentTimeMillis();
 
         /* 동기 방식 */
-        /*notices.forEach(notice ->
+       /* notices.forEach(notice ->
                 sendLog(notice.getTitle())
         );*/
 
